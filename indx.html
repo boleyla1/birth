@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوتنامه تولد</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin:0;
+            font-family:'Vazirmatn', sans-serif;
+            background:linear-gradient(135deg,#fff1f2,#f3e8ff,#fff7ed);
+            overflow-x:hidden;
+        }
+
+        .wrapper{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:40px 15px;
+            position:relative;
+        }
+
+        /* ایموجی‌ها */
+        .decor{
+            position:absolute;
+            inset:0;
+            pointer-events:none;
+            overflow:hidden;
+        }
+
+        .decor span{
+            position:absolute;
+            font-size:clamp(18px, 3.5vw, 40px);
+            animation: float 6s infinite ease-in-out;
+            opacity:0.85;
+        }
+
+        .e1{left:5%; top:10%;}
+        .e2{left:15%; top:20%;}
+        .e3{left:25%; top:80%;}
+        .e4{left:35%; top:35%;}
+        .e5{left:45%; top:15%;}
+        .e6{left:60%; top:25%;}
+        .e7{left:75%; top:40%;}
+        .e8{right:10%; top:55%;}
+        .e9{right:20%; top:75%;}
+        .e10{right:30%; top:15%;}
+        .e11{left:50%; top:90%;}
+        .e12{right:45%; top:35%;}
+        .e13{left:70%; top:60%;}
+        .e14{right:60%; top:10%;}
+        .e15{left:80%; top:20%;}
+        .e16{right:5%; top:30%;}
+        .e17{left:10%; top:60%;}
+        .e18{right:15%; top:85%;}
+        .e19{left:40%; top:5%;}
+        .e20{right:40%; top:50%;}
+
+        @keyframes float{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-30px);}
+            100%{transform:translateY(0);}
+        }
+
+        /* کارت */
+        .card{
+            width:90%;
+            max-width:800px;
+            background:rgba(255,255,255,0.92);
+            backdrop-filter: blur(8px);
+            border-radius:28px;
+            padding:40px;
+            text-align:center;
+            box-shadow:0 20px 50px rgba(120, 80, 160, 0.15);
+            position:relative;
+            z-index:2;
+            border:1px solid rgba(168,85,247,0.15);
+        }
+
+        h1{
+            color:#a855f7;
+            margin-bottom:10px;
+        }
+
+        .subtitle{
+            color:#db2777;
+            font-size:20px;
+            margin-bottom:15px;
+        }
+
+        .name{
+            font-size:52px;
+            font-weight:700;
+            color:#7c3aed;
+        }
+
+        .info{
+            color:#4b5563;
+            line-height:2;
+            margin-top:15px;
+        }
+
+        /* ⭐ متن جدید شما */
+        .invite-text{
+            margin-top:20px;
+            background:linear-gradient(135deg,#fdf4ff,#fff1f2);
+            padding:18px;
+            border-radius:18px;
+            color:#374151;
+            line-height:2.2;
+            font-size:16px;
+        }
+
+        .address{
+            margin-top:15px;
+            background:linear-gradient(135deg,#fff7ed,#fef3c7);
+            padding:18px;
+            border-radius:18px;
+            color:#374151;
+            border:1px solid rgba(251,191,36,0.2);
+        }
+
+        /* موبایل */
+        @media (max-width:600px){
+            .card{
+                padding:20px;
+                border-radius:20px;
+            }
+
+            .name{
+                font-size:34px;
+            }
+
+            .decor span{
+                font-size:26px;
+                opacity:0.7;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="decor">
+        <span class="e1">🎈</span>
+        <span class="e2">🦋</span>
+        <span class="e3">🎈</span>
+        <span class="e4">🦋</span>
+        <span class="e5">🎈</span>
+        <span class="e6">🦋</span>
+        <span class="e7">🎈</span>
+        <span class="e8">🦋</span>
+        <span class="e9">🎈</span>
+        <span class="e10">🦋</span>
+        <span class="e11">🎈</span>
+        <span class="e12">🦋</span>
+        <span class="e13">🎈</span>
+        <span class="e14">🦋</span>
+        <span class="e15">🎈</span>
+        <span class="e16">🦋</span>
+        <span class="e17">🎈</span>
+        <span class="e18">🦋</span>
+        <span class="e19">🎈</span>
+        <span class="e20">🦋</span>
+    </div>
+
+    <div class="card">
+
+        <h1>✨ جشن تولد پریانه ✨</h1>
+
+        <div class="subtitle">شما به جشن تولد دعوت هستید</div>
+
+        <div class="name">آوا</div>
+
+        <div class="info">
+            📅 تاریخ: 20 خرداد 1405<br>
+            🕒 ساعت: 18:00<br>
+            📍 محل برگزاری: تهران
+        </div>
+
+        <!-- متن جدید -->
+        <div class="invite-text">
+            با يك دنيا ذوق و لبخند، شمارا به جشن تولد دختر كوجولوى عزيزمان دعوت مى كنيم.<br>
+            حضورتان شادى اين روز را دوچندان خواهد كرد.
+        </div>
+
+        <div class="address">
+            📍 آدرس:<br>
+            از سمت قائمشهر<br>
+            کیاکلا<br>
+            میدان شهید صمصام طور / دست چپ بپیچید<br>
+            یک کیلومتر بعد پل فلزی / روستای تالار پشت
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
