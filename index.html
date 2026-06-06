@@ -129,15 +129,19 @@
     <title></title>
 </head>
 <body>
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
 <div class="wrapper">
     <div class="card">
         <h1>✨ جشن تولد پریانه ✨</h1>
         <div class="subtitle">شما به جشن تولد دعوت هستید</div>
         <div class="name">آوا</div>
         <div class="info">
-            📅 تاریخ: ۲۰ خرداد ۱۴۰۵<br>
-            🕒 ساعت: ۱۸:۰۰<br>
-            📍 محل برگزاری: تهران
+            📅 تاریخ: ۱۸ خرداد ۱۴۰۵<br>
+            🕒 🕒 ساعت: ۱۹:۰۰ <br>
+            📍 محل برگزاری: باغ مهدیس
         </div>
         <div class="invite-text">
             با يك دنيا ذوق و لبخند،
@@ -177,5 +181,18 @@
         <span class="e20">🎀</span>
     </div>
 </div>
+<script>
+    const audio = document.getElementById("bgMusic");
+
+    function playMusic() {
+        audio.play().catch(err => console.log(err));
+
+        document.removeEventListener("touchstart", playMusic);
+        document.removeEventListener("click", playMusic);
+    }
+
+    document.addEventListener("touchstart", playMusic, {passive:true});
+    document.addEventListener("click", playMusic);
+</script>
 </body>
 </html>
